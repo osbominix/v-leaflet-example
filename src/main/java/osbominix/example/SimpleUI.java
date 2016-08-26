@@ -30,32 +30,14 @@ import java.util.Map;
 
 public class SimpleUI extends UI {
     static final long serialVersionUID = 511085335415683713L;
-    int count = 0;
-    Label label = new Label("Hello World!");
-    Button btn = new Button("Run");
-    Slider slider = new Slider();
-    Boolean sliderIsReady = true;
-
-    private final Object sliderLock = new Object();
-
-    final static String btnCaptionRun = "Run";
-    final static String btnCaptionStop = "Stop";
 
     @Override
     protected void init(VaadinRequest request) {
-        VerticalLayout verticalLayout = new VerticalLayout();
-
         LMap leafletMap = new LMap();
         leafletMap.setCenter(52.520007, 13.404954);
         leafletMap.setZoomLevel(6);
-
-
-
         leafletMap.addBaseLayer(new LOpenStreetMapLayer(), "OSM");
-
-
         setContent(leafletMap);
-
     }
 
 
