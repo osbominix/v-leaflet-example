@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
 
-@Title("My vaadin project in maven")
+@Title("My vaadin project with leaflet")
 @Theme("valo")
 @Push
 
