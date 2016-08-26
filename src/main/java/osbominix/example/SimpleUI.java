@@ -1,9 +1,8 @@
 /**
  * @author yl
  *
- * create a simple vaadin project in maven
- *
- * by click on button, the times will be counted and shown in the label above.
+ * create vaadin project with leaflet
+ * 
  */
 package osbominix.example;
 
